@@ -1,10 +1,17 @@
 # 🛍️ Customer Shopping Behavior Analysis
 
-An end-to-end **Data Analytics** project that analyzes customer shopping behavior using **Python, PostgreSQL, SQL, and Power BI**. The objective is to uncover customer purchasing patterns, identify high-value customer segments, evaluate product performance, and generate actionable business insights to support data-driven decision-making.
+![Python](https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge&logo=python)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-336791?style=for-the-badge&logo=postgresql)
+![SQL](https://img.shields.io/badge/SQL-Analytics-orange?style=for-the-badge)
+![Power BI](https://img.shields.io/badge/Power_BI-Dashboard-F2C811?style=for-the-badge&logo=powerbi)
+![Pandas](https://img.shields.io/badge/Pandas-Data_Analysis-150458?style=for-the-badge&logo=pandas)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+
+An end-to-end **Data Analytics** project that analyzes customer shopping behavior using **Python, PostgreSQL, SQL, and Power BI**. The project uncovers customer purchasing patterns, identifies high-value customer segments, evaluates product performance, and provides actionable business insights to support data-driven decision-making.
 
 ---
 
-## 📌 Business Problem
+# 📌 Business Problem
 
 A leading retail company wants to better understand customer shopping behavior to improve:
 
@@ -14,18 +21,26 @@ A leading retail company wants to better understand customer shopping behavior t
 - Customer Retention
 - Revenue Growth
 
-This project answers the business question:
+### Business Question
 
-> **"How can the company leverage customer shopping data to identify trends, improve customer engagement, and optimize marketing and product strategies?"**
+> **How can the company leverage customer shopping data to identify trends, improve customer engagement, and optimize marketing and product strategies?**
 
 ---
 
-## 📊 Dataset Overview
+# 📊 Dashboard Preview
 
-| Feature | Value |
-|----------|-------|
-| Total Records | 3,900 |
-| Total Columns | 18 |
+The interactive Power BI dashboard provides a comprehensive overview of customer purchasing behavior and key business metrics.
+
+![Customer Shopping Behavior Dashboard](Customer_behavior_dashboard.png)
+
+---
+
+# 📊 Dataset Overview
+
+| Feature | Details |
+|----------|---------|
+| Dataset Size | 3,900 Records |
+| Total Features | 18 Columns |
 | Missing Values | 37 (Review Rating) |
 | Domain | Retail / E-Commerce |
 | Tools Used | Python, PostgreSQL, SQL, Power BI |
@@ -38,8 +53,8 @@ This project answers the business question:
 - Shopping Frequency
 - Subscription Status
 - Discounts & Promotions
-- Review Ratings
 - Shipping Preferences
+- Product Reviews
 - Seasonal Purchases
 
 ---
@@ -53,8 +68,8 @@ This project answers the business question:
 | NumPy | Numerical Operations |
 | PostgreSQL | Database Management |
 | SQL | Business Analysis |
-| Power BI | Dashboard & Visualization |
-| Jupyter Notebook | Analysis Environment |
+| Power BI | Dashboard & Data Visualization |
+| Jupyter Notebook | Development Environment |
 
 ---
 
@@ -63,27 +78,16 @@ This project answers the business question:
 ```
 Customer-Shopping-Behavior-Analysis
 │
-├── data
-│   └── customer_shopping_behavior.csv
-│
-├── notebook
-│   └── customer_shopping_behavior_analysis.ipynb
-│
-├── sql
-│   └── customer_behavior_sql_queries.sql
-│
-├── dashboard
-│   └── customer_behavior_dashboard.pbix
-│
-├── reports
-│   ├── business_problem_statement.pdf
-│   ├── project_report.pdf
-│   └── project_presentation.pptx
-│
-├── images
-│   └── dashboard.png
-│
-└── README.md
+├── Business Problem Document.pdf
+├── Customer Shopping Behavior Analysis.pdf
+├── Customer-Shopping-Behavior-Analysis.pptx
+├── Customer_Shopping_Behavior_Analysis.ipynb
+├── customer_behavior_dashboard.pbix
+├── customer_behavior_dashboard.png
+├── customer_behavior_sql_queries.sql
+├── customer_shopping_behavior.csv
+├── README.md
+└── LICENSE
 ```
 
 ---
@@ -100,7 +104,7 @@ Data Cleaning (Python)
 Feature Engineering
       │
       ▼
-Load into PostgreSQL
+PostgreSQL Database
       │
       ▼
 SQL Business Analysis
@@ -120,60 +124,61 @@ The dataset was cleaned and transformed using Python.
 
 ### Data Cleaning
 
-- Imported dataset using Pandas
-- Checked dataset structure
-- Handled missing values
-- Renamed columns using snake_case convention
+- Imported the dataset using Pandas
+- Performed exploratory data analysis
+- Checked for missing values
+- Imputed missing Review Rating values
+- Renamed columns using snake_case
 - Removed redundant columns
 - Verified data consistency
 
 ### Feature Engineering
 
-- Created Age Groups
-- Created Purchase Frequency feature
-- Improved data quality for SQL analysis
+- Created customer Age Groups
+- Generated Purchase Frequency feature
+- Prepared clean data for SQL analysis
 
 ### Database Integration
 
 - Connected Python with PostgreSQL
-- Loaded cleaned dataset into PostgreSQL database
+- Loaded cleaned data into PostgreSQL database
 
 ---
 
 # 📈 SQL Business Analysis
 
-The following business questions were answered using SQL:
+Business questions solved using SQL:
 
-- Revenue generated by Gender
+- Revenue by Gender
 - High-Spending Discount Users
 - Top Rated Products
 - Shipping Type Comparison
-- Subscribers vs Non-Subscribers Analysis
+- Subscribers vs Non-Subscribers
 - Discount Dependent Products
 - Customer Segmentation
 - Top Products by Category
-- Repeat Buyers vs Subscription Status
+- Repeat Buyers & Subscription Analysis
 - Revenue by Age Group
 
 ---
 
 # 📊 Power BI Dashboard
 
-Interactive dashboard includes:
+The interactive dashboard contains:
 
-### KPIs
+### KPI Cards
 
 - Total Customers
 - Average Purchase Amount
 - Average Review Rating
 
-### Visualizations
+### Charts
 
 - Revenue by Category
 - Sales by Category
 - Revenue by Age Group
 - Sales by Age Group
-- Subscription Distribution
+- Subscription Status Distribution
 
 ### Interactive Filters
 
@@ -184,25 +189,25 @@ Interactive dashboard includes:
 
 ---
 
-# 💡 Key Insights
+# 💡 Key Business Insights
 
 - Male customers generated higher overall revenue than female customers.
-- Express shipping customers spent more per purchase than standard shipping customers.
-- Loyal customers contributed significantly to total sales.
+- Express shipping customers spent more per transaction than standard shipping users.
+- Loyal customers contributed significantly to total revenue.
 - Young Adult customers generated the highest revenue.
-- Some products depended heavily on discounts for sales.
-- Subscribers showed stronger customer retention behavior.
+- Certain products relied heavily on discounts for sales.
+- Subscribers demonstrated stronger customer retention.
 
 ---
 
 # 📌 Business Recommendations
 
 - Expand customer loyalty programs.
-- Increase subscription benefits to improve retention.
-- Promote top-rated products in marketing campaigns.
-- Optimize discount strategies for better profitability.
-- Focus marketing on high-value customer segments.
-- Encourage premium shipping options to increase revenue.
+- Improve subscription benefits.
+- Optimize discount strategies.
+- Promote top-rated products.
+- Focus marketing campaigns on high-value customer segments.
+- Encourage premium shipping options.
 
 ---
 
@@ -211,48 +216,51 @@ Interactive dashboard includes:
 - Data Cleaning
 - Exploratory Data Analysis (EDA)
 - Feature Engineering
-- SQL Query Writing
+- SQL Query Optimization
 - PostgreSQL
-- Business Analytics
 - Customer Segmentation
+- Business Analytics
 - Dashboard Design
 - Data Visualization
 - Business Storytelling
-- Power BI
 - Python Programming
+- Power BI
 
 ---
 
-# 📷 Dashboard Preview
+# 📈 Future Enhancements
 
-```markdown
-![Dashboard](images/dashboard.png)
-```
-
----
-
-# 📈 Future Improvements
-
-- Customer Lifetime Value (CLV) Prediction
+- Customer Lifetime Value Prediction
 - Customer Churn Prediction
 - Recommendation System
 - Sales Forecasting
 - RFM Analysis
 - Machine Learning Models
-- Customer Purchase Prediction
 
 ---
 
 # 📚 Learning Outcomes
 
-Through this project, I gained practical experience in:
+Through this project, I gained hands-on experience in:
 
 - Cleaning and transforming real-world datasets
 - Writing optimized SQL queries
 - Working with PostgreSQL databases
 - Building interactive Power BI dashboards
-- Converting business requirements into actionable insights
-- Presenting findings through reports and visualizations
+- Solving business problems using data analytics
+- Presenting insights through reports and visualizations
+
+---
+
+# ⭐ Repository Highlights
+
+- ✅ End-to-End Data Analytics Project
+- ✅ Python Data Cleaning
+- ✅ PostgreSQL Database Integration
+- ✅ Advanced SQL Business Queries
+- ✅ Interactive Power BI Dashboard
+- ✅ Business Recommendations
+- ✅ Professional Documentation
 
 ---
 
@@ -262,17 +270,17 @@ Through this project, I gained practical experience in:
 
 **Data Analyst | Python | SQL | PostgreSQL | Power BI | Excel**
 
-### Connect with me
+### Connect with Me
 
-- 🔗 GitHub: https://github.com/siddhesh1503
-- 💼 LinkedIn: https://www.linkedin.com/in/siddhesh-shinde-9551922a9
+- 💻 **GitHub:** https://github.com/siddhesh1503
+- 💼 **LinkedIn:** https://www.linkedin.com/in/siddhesh-shinde-9551922a9
 
-If you found this project useful, consider giving it a ⭐ on GitHub!
+If you found this project helpful, consider giving it a ⭐ on GitHub!
 
----
+
 
 ## ⭐ Support
 
-If you like this project, don't forget to **star the repository**.
+If you like this project, don't forget to **Star ⭐ the repository**.
 
-It helps others discover the project and motivates me to build more data analytics projects.
+It helps others discover the project and motivates me to create more Data Analytics and Machine Learning projects.
